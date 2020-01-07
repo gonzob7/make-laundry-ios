@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB523C5231C001721EE /* AppDelegate.swift */; };
 		E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB723C5231D001721EE /* SceneDelegate.swift */; };
-		E02E7EBA23C5231D001721EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB923C5231D001721EE /* ViewController.swift */; };
+		E02E7EBA23C5231D001721EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB923C5231D001721EE /* LoginViewController.swift */; };
 		E02E7EBD23C5231D001721EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02E7EBB23C5231D001721EE /* Main.storyboard */; };
 		E02E7EC023C5231D001721EE /* MakeLaundry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EBE23C5231D001721EE /* MakeLaundry.xcdatamodeld */; };
 		E02E7EC223C5231E001721EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02E7EC123C5231E001721EE /* Assets.xcassets */; };
 		E02E7EC523C5231E001721EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02E7EC323C5231E001721EE /* LaunchScreen.storyboard */; };
+		E02E7ECD23C52925001721EE /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E02E7ECC23C52925001721EE /* Raleway-Light.ttf */; };
+		E02E7ECF23C52C56001721EE /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7ECE23C52C56001721EE /* DesignableView.swift */; };
+		E02E7ED123C52ED6001721EE /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E02E7EB223C5231C001721EE /* MakeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02E7EB523C5231C001721EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E02E7EB723C5231D001721EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E02E7EB923C5231D001721EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E02E7EB923C5231D001721EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E02E7EBC23C5231D001721EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E02E7EBF23C5231D001721EE /* MakeLaundry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeLaundry.xcdatamodel; sourceTree = "<group>"; };
 		E02E7EC123C5231E001721EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E02E7EC423C5231E001721EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E02E7EC623C5231E001721EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02E7ECC23C52925001721EE /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		E02E7ECE23C52C56001721EE /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				E02E7EB523C5231C001721EE /* AppDelegate.swift */,
 				E02E7EB723C5231D001721EE /* SceneDelegate.swift */,
-				E02E7EB923C5231D001721EE /* ViewController.swift */,
+				E02E7EB923C5231D001721EE /* LoginViewController.swift */,
 				E02E7EBB23C5231D001721EE /* Main.storyboard */,
 				E02E7EC123C5231E001721EE /* Assets.xcassets */,
 				E02E7EC323C5231E001721EE /* LaunchScreen.storyboard */,
 				E02E7EC623C5231E001721EE /* Info.plist */,
 				E02E7EBE23C5231D001721EE /* MakeLaundry.xcdatamodeld */,
+				E02E7ECC23C52925001721EE /* Raleway-Light.ttf */,
+				E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */,
+				E02E7ECE23C52C56001721EE /* DesignableView.swift */,
 			);
 			path = MakeLaundry;
 			sourceTree = "<group>";
@@ -129,8 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02E7EC523C5231E001721EE /* LaunchScreen.storyboard in Resources */,
+				E02E7ED123C52ED6001721EE /* Raleway-Regular.ttf in Resources */,
 				E02E7EC223C5231E001721EE /* Assets.xcassets in Resources */,
 				E02E7EBD23C5231D001721EE /* Main.storyboard in Resources */,
+				E02E7ECD23C52925001721EE /* Raleway-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02E7EBA23C5231D001721EE /* ViewController.swift in Sources */,
+				E02E7EBA23C5231D001721EE /* LoginViewController.swift in Sources */,
 				E02E7EC023C5231D001721EE /* MakeLaundry.xcdatamodeld in Sources */,
 				E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */,
+				E02E7ECF23C52C56001721EE /* DesignableView.swift in Sources */,
 				E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
