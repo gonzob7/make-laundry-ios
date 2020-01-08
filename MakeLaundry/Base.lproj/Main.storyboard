@@ -20,8 +20,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAKE LAUNDRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-T7-EJy">
+                                <rect key="frame" x="43" y="92" width="329" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="41"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAE-zk-g9C" customClass="DesignableView" customModule="MakeLaundry" customModuleProvider="target">
-                                <rect key="frame" x="40" y="253" width="334" height="262"/>
+                                <rect key="frame" x="40" y="303" width="334" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EMAIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB8-xf-OxN">
@@ -79,6 +86,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LmU-6c-GqK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpu-at-brO">
                                         <rect key="frame" x="87" y="230" width="162" height="17"/>
@@ -88,7 +98,7 @@
                                             <color key="titleColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="fjp-i9-uPi" kind="show" id="qNo-7Z-8JV"/>
+                                            <segue destination="fjp-i9-uPi" kind="show" id="GWW-45-6Jd"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6L-jv-uBp">
@@ -116,13 +126,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MAKE LAUNDRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-T7-EJy">
-                                <rect key="frame" x="43" y="92" width="329" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="41"/>
-                                <color key="textColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -133,17 +136,18 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
-                        <outlet property="loginView" destination="bAE-zk-g9C" id="rwv-6s-sgt"/>
+                        <outlet property="emailLoginField" destination="1r1-bf-v8h" id="42a-Tj-2u7"/>
+                        <outlet property="passwordLoginField" destination="QPO-gO-bvT" id="o0R-gt-zeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="SFR-yR-N7B">
             <objects>
-                <viewController id="fjp-i9-uPi" customClass="LoginViewController" customModule="MakeLaundry" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fjp-i9-uPi" customClass="RegisterViewController" customModule="MakeLaundry" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ld-x4-Xon">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +232,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="fjp-i9-uPi" eventType="touchUpInside" id="Eis-RK-KhW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONFIRM PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBh-Xq-XnX">
                                         <rect key="frame" x="20" y="271" width="146" height="17"/>
@@ -287,9 +294,6 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="A0B-UT-9Q7"/>
-                    <connections>
-                        <outlet property="loginView" destination="Qb4-zX-b8L" id="FGm-qz-auN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJF-0n-0IC" sceneMemberID="firstResponder"/>
             </objects>

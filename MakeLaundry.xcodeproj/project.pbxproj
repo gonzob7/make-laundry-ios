@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F8BFC9867D6267BD356DB27 /* Pods_MakeLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10F20B78608AEC9436254C8 /* Pods_MakeLaundry.framework */; };
 		E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB523C5231C001721EE /* AppDelegate.swift */; };
 		E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB723C5231D001721EE /* SceneDelegate.swift */; };
 		E02E7EBA23C5231D001721EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB923C5231D001721EE /* LoginViewController.swift */; };
@@ -17,9 +18,13 @@
 		E02E7ECD23C52925001721EE /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E02E7ECC23C52925001721EE /* Raleway-Light.ttf */; };
 		E02E7ECF23C52C56001721EE /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7ECE23C52C56001721EE /* DesignableView.swift */; };
 		E02E7ED123C52ED6001721EE /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */; };
+		E02E7ED323C5481A001721EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7ED223C5481A001721EE /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B0991A73255353E9233C21 /* Pods-MakeLaundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeLaundry.release.xcconfig"; path = "Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry.release.xcconfig"; sourceTree = "<group>"; };
+		513B4A70FF22A56BB85B699C /* Pods-MakeLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeLaundry.debug.xcconfig"; path = "Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry.debug.xcconfig"; sourceTree = "<group>"; };
+		D10F20B78608AEC9436254C8 /* Pods_MakeLaundry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeLaundry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02E7EB223C5231C001721EE /* MakeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02E7EB523C5231C001721EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E02E7EB723C5231D001721EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		E02E7ECC23C52925001721EE /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		E02E7ECE23C52C56001721EE /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		E02E7ED223C5481A001721EE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8BFC9867D6267BD356DB27 /* Pods_MakeLaundry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EAA071CB1D04FA16BDB99AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D10F20B78608AEC9436254C8 /* Pods_MakeLaundry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		825D9CCBD4E8C85C7E5DA749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				513B4A70FF22A56BB85B699C /* Pods-MakeLaundry.debug.xcconfig */,
+				35B0991A73255353E9233C21 /* Pods-MakeLaundry.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E02E7EA923C5231C001721EE = {
 			isa = PBXGroup;
 			children = (
 				E02E7EB423C5231C001721EE /* MakeLaundry */,
 				E02E7EB323C5231C001721EE /* Products */,
+				825D9CCBD4E8C85C7E5DA749 /* Pods */,
+				5EAA071CB1D04FA16BDB99AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +102,7 @@
 				E02E7ECC23C52925001721EE /* Raleway-Light.ttf */,
 				E02E7ED023C52ED6001721EE /* Raleway-Regular.ttf */,
 				E02E7ECE23C52C56001721EE /* DesignableView.swift */,
+				E02E7ED223C5481A001721EE /* RegisterViewController.swift */,
 			);
 			path = MakeLaundry;
 			sourceTree = "<group>";
@@ -86,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E02E7EC923C5231E001721EE /* Build configuration list for PBXNativeTarget "MakeLaundry" */;
 			buildPhases = (
+				991D62036D3858039C69604B /* [CP] Check Pods Manifest.lock */,
 				E02E7EAE23C5231C001721EE /* Sources */,
 				E02E7EAF23C5231C001721EE /* Frameworks */,
 				E02E7EB023C5231C001721EE /* Resources */,
+				18923E69624F3DE35270542D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +177,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18923E69624F3DE35270542D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991D62036D3858039C69604B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeLaundry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E02E7EAE23C5231C001721EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -155,6 +227,7 @@
 				E02E7EBA23C5231D001721EE /* LoginViewController.swift in Sources */,
 				E02E7EC023C5231D001721EE /* MakeLaundry.xcdatamodeld in Sources */,
 				E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */,
+				E02E7ED323C5481A001721EE /* RegisterViewController.swift in Sources */,
 				E02E7ECF23C52C56001721EE /* DesignableView.swift in Sources */,
 				E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */,
 			);
@@ -298,6 +371,7 @@
 		};
 		E02E7ECA23C5231E001721EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513B4A70FF22A56BB85B699C /* Pods-MakeLaundry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +390,7 @@
 		};
 		E02E7ECB23C5231E001721EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B0991A73255353E9233C21 /* Pods-MakeLaundry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
