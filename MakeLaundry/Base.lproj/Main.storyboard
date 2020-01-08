@@ -294,6 +294,12 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="A0B-UT-9Q7"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="xjg-mF-1WA" id="Jod-Bv-LyI"/>
+                        <outlet property="nameTextField" destination="YA0-0U-ReC" id="u37-Rd-Lsh"/>
+                        <outlet property="passwordConfirmTextField" destination="Rt7-E6-IZA" id="Fdc-Fi-A5Z"/>
+                        <outlet property="passwordTextField" destination="O5C-Fj-a7O" id="9HH-JX-Fir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJF-0n-0IC" sceneMemberID="firstResponder"/>
             </objects>

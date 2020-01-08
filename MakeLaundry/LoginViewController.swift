@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginPressed(_ sender: Any) {
-        Alamofire.request("https://make-laundry.herokuapp.com/login?email=" + emailLoginField.text! + "&password=" + passwordLoginField.text!, method: .post).response { response in
+        Alamofire.request("https://make-laundry.herokuapp.com/login?email=" + emailLoginField.text! + "&password=" + passwordLoginField.text!, method: .post, encoding: JSONEncoding.default).response { response in
             debugPrint(response)
         }
 
