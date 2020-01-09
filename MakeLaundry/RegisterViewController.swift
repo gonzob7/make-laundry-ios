@@ -62,21 +62,33 @@ class RegisterViewController: UIViewController {
     
     @IBAction func registerPressed(_ sender: Any) {
         
-        if nameTextField.text != nil && emailTextField.text != nil && passwordTextField.text != nil && passwordConfirmTextField != nil{
             if passwordTextField.text == passwordConfirmTextField.text{
-                AF.request("https://make-laundry.herokuapp.com/register?name=" + nameTextField.text! + "&email=" + emailTextField.text! + "&password=" + passwordConfirmTextField.text!, method: .post, encoding: JSONEncoding.default).response { response in
-                    debugPrint(response)
+                let name = self.nameTextField.text
+                let email = self.emailTextField.text
+                let password = self.passwordConfirmTextField.text
+
+                let parameters = [ "name": name, "email" : email, "password" : password]
+                
+                
+
+
+                AF.request("https://make-laundry.herokuapp.com/api/signup", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+                .responseJSON { response in
+                   switch response.result {
+                    case .success(let value):
+                        print(value)
+                        print("Signed up!")
+                        self.performSegue(withIdentifier: "signedUp", sender: nil)
+                    case .failure(let error):
+                        print(error)
+                        print("Not signed up!")
+                    }
+                    
                 }
+                
             }else{
                 print("passwords do not match")
             }
-        }else{
-            print("please fill in all parameters!")
-        }
-
-      
-
-        
     }
     
 }
