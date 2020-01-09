@@ -47,12 +47,14 @@ class LoginViewController: UIViewController {
             case .success(let value):
                 print(value)
                 print("Logged in!")
+                
+                
                 self.performSegue(withIdentifier: "loggedIn", sender: nil)
             case .failure(let error):
                 print(error)
                 print("Not logged in!")
             }
-            
+                                
         }
             
 
