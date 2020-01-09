@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F8BFC9867D6267BD356DB27 /* Pods_MakeLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10F20B78608AEC9436254C8 /* Pods_MakeLaundry.framework */; };
+		E025699623C7E6EF00E48E7C /* MachinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E025699523C7E6EF00E48E7C /* MachinesViewController.swift */; };
 		E025C64A23C6E042000F916C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E025C64923C6E042000F916C /* SettingsViewController.swift */; };
 		E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB523C5231C001721EE /* AppDelegate.swift */; };
 		E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E7EB723C5231D001721EE /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		35B0991A73255353E9233C21 /* Pods-MakeLaundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeLaundry.release.xcconfig"; path = "Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry.release.xcconfig"; sourceTree = "<group>"; };
 		513B4A70FF22A56BB85B699C /* Pods-MakeLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeLaundry.debug.xcconfig"; path = "Target Support Files/Pods-MakeLaundry/Pods-MakeLaundry.debug.xcconfig"; sourceTree = "<group>"; };
 		D10F20B78608AEC9436254C8 /* Pods_MakeLaundry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeLaundry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E025699523C7E6EF00E48E7C /* MachinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesViewController.swift; sourceTree = "<group>"; };
 		E025C64923C6E042000F916C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E02E7EB223C5231C001721EE /* MakeLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02E7EB523C5231C001721EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,8 @@
 				E02E7EB723C5231D001721EE /* SceneDelegate.swift */,
 				E02E7EB923C5231D001721EE /* LoginViewController.swift */,
 				E02E7ED223C5481A001721EE /* RegisterViewController.swift */,
+				E025699523C7E6EF00E48E7C /* MachinesViewController.swift */,
+				E025C64923C6E042000F916C /* SettingsViewController.swift */,
 				E02E7EBB23C5231D001721EE /* Main.storyboard */,
 				E02E7EC123C5231E001721EE /* Assets.xcassets */,
 				E02E7EC323C5231E001721EE /* LaunchScreen.storyboard */,
@@ -104,7 +108,6 @@
 				E02E7EBE23C5231D001721EE /* MakeLaundry.xcdatamodeld */,
 				E02E7ECC23C52925001721EE /* Raleway-Light.ttf */,
 				E02E7ECE23C52C56001721EE /* DesignableView.swift */,
-				E025C64923C6E042000F916C /* SettingsViewController.swift */,
 			);
 			path = MakeLaundry;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				E02E7EB623C5231C001721EE /* AppDelegate.swift in Sources */,
 				E02E7ED323C5481A001721EE /* RegisterViewController.swift in Sources */,
 				E02E7ECF23C52C56001721EE /* DesignableView.swift in Sources */,
+				E025699623C7E6EF00E48E7C /* MachinesViewController.swift in Sources */,
 				E02E7EB823C5231D001721EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
