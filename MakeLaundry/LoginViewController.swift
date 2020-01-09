@@ -27,28 +27,34 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginPressed(_ sender: Any) {
-            let headers : HTTPHeaders = ["Content-Type": "application/x-www-form-urlencoded"]
 
-        AF.request("https://make-laundry.herokuapp.com/api/csrf", headers: headers).response { response in
-                debugPrint(response)
+//        AF.request("https://make-laundry.herokuapp.com/api/csrf").response { response in
+//                debugPrint(response)
+//
+//
+//            }
                 
-                let email = self.emailLoginField.text
-                let password = self.passwordLoginField.text
-                
-            
-                let parameters = [ "email" : email, "password" : password, "_csrf" : response] as [String : Any]
-            
-                let headers : HTTPHeaders = ["Content-Type": "application/x-www-form-urlencoded"]
+        let email = self.emailLoginField.text
+        let password = self.passwordLoginField.text
+
+        let parameters = [ "email" : email, "password" : password]
+        
 
 
-                AF.request("https://make-laundry.herokuapp.com/api/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers)
-                .responseJSON { response in
-                    debugPrint(response)
-                }
+        AF.request("https://make-laundry.herokuapp.com/api/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        .responseJSON { response in
+           switch response.result {
+            case .success(let value):
+                print(value)
+                print("Logged in!")
+                self.performSegue(withIdentifier: "loggedIn", sender: nil)
+            case .failure(let error):
+                print(error)
+                print("Not logged in!")
             }
-    
-        
-        
+            
+        }
+            
 
         
         
