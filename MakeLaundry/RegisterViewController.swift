@@ -13,6 +13,8 @@ import Alamofire
 class RegisterViewController: UIViewController {
 
     
+
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -59,13 +61,19 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func registerPressed(_ sender: Any) {
-        if passwordTextField.text == passwordConfirmTextField.text{
-            Alamofire.request("https://make-laundry.herokuapp.com/register?name=" + nameTextField.text! + "&email=" + emailTextField.text! + "&password=" + passwordConfirmTextField.text!, method: .post, encoding: JSONEncoding.default).response { response in
-                debugPrint(response)
+        
+        if nameTextField.text != nil && emailTextField.text != nil && passwordTextField.text != nil && passwordConfirmTextField != nil{
+            if passwordTextField.text == passwordConfirmTextField.text{
+                AF.request("https://make-laundry.herokuapp.com/register?name=" + nameTextField.text! + "&email=" + emailTextField.text! + "&password=" + passwordConfirmTextField.text!, method: .post, encoding: JSONEncoding.default).response { response in
+                    debugPrint(response)
+                }
+            }else{
+                print("passwords do not match")
             }
         }else{
-            print("passwords do not match")
+            print("please fill in all parameters!")
         }
+
       
 
         

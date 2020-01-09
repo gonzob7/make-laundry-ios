@@ -305,5 +305,127 @@
             </objects>
             <point key="canvasLocation" x="882.60869565217399" y="138.61607142857142"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="hjR-w5-1H7">
+            <objects>
+                <viewController id="tkH-yK-CkS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tp1-Gs-vC2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="drT-g6-xUw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="xEx-c2-Y6a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ViF-K2-q0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3819" y="492"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nsD-fj-rAE">
+            <objects>
+                <viewController id="D0X-vw-eJ9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jui-eF-kwc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-E2-1RM" customClass="DesignableView" customModule="MakeLaundry" customModuleProvider="target">
+                                <rect key="frame" x="27" y="138" width="360" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-kO-qFh" customClass="DesignableView" customModule="MakeLaundry" customModuleProvider="target">
+                                <rect key="frame" x="27" y="465" width="360" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Washers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GH-tA-Nbk">
+                                <rect key="frame" x="27" y="106" width="217" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="24"/>
+                                <color key="textColor" red="0.37647058823529411" green="0.6470588235294118" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WSI-MU-Skz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Unb-XM-45d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZo-lF-Lrq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4728.985507246377" y="-196.20535714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w6A-9y-I3V">
+            <objects>
+                <tabBarController id="boh-3L-Ix1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="99Z-Cb-rco">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AOy-s9-cvk" kind="relationship" relationship="viewControllers" id="N3n-61-eZy"/>
+                        <segue destination="tkH-yK-CkS" kind="relationship" relationship="viewControllers" id="fSH-hp-1Ta"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHC-dG-bRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="139"/>
+        </scene>
+        <!--Machines-->
+        <scene sceneID="s8I-Vc-wKv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AOy-s9-cvk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Machines" id="xZS-CW-Som"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cCb-PN-iB7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D0X-vw-eJ9" kind="relationship" relationship="rootViewController" id="gJP-sp-DIg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbc-Jl-tRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3818.8405797101454" y="-196.20535714285714"/>
+        </scene>
     </scenes>
 </document>
