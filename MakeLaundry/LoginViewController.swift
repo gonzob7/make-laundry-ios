@@ -24,18 +24,11 @@ class LoginViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapGesture)
         
-        
     }
 
     
     
     @IBAction func loginPressed(_ sender: Any) {
-
-//        AF.request("https://make-laundry.herokuapp.com/api/csrf").response { response in
-//                debugPrint(response)
-//
-//
-//            }
                 
         let email = self.emailLoginField.text
         let password = self.passwordLoginField.text
