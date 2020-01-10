@@ -13,6 +13,7 @@ import SwiftSoup
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: DesignableButton!
     
     @IBOutlet weak var emailLoginField: UITextField!
     @IBOutlet weak var passwordLoginField: UITextField!
@@ -20,6 +21,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //         Do any additional setup after loading the view.
+        
+        emailLoginField.text = "test@test.com"
+        passwordLoginField.text = "test1234"
+        loginButton.sendActions(for: .touchUpInside)
 
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapGesture)
