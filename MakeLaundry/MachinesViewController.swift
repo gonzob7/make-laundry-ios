@@ -28,10 +28,17 @@ class MachinesViewcontroller: UIViewController{
     @IBOutlet weak var machine3Btn: DesignableButton!
     @IBOutlet weak var machine4Btn: DesignableButton!
     
+    @IBOutlet weak var machine5Btn: DesignableButton!
+    @IBOutlet weak var machine6Btn: DesignableButton!
+    
+    
+    @IBOutlet var allMachineBtns: [DesignableButton]!
+    
+    
     
     override func viewDidLoad() {
         loadCards()
-        loadButtons()
+
     }
     
     @IBAction func machinePressed(_ sender: UIButton) {
@@ -147,30 +154,31 @@ class MachinesViewcontroller: UIViewController{
                         
                         if machine5Status == nil{
                             print("MACHINE 5 IS VACANT")
-//                            self.machine5Btn.accessibilityIdentifier = "vacant"
+                            self.machine5Btn.accessibilityIdentifier = "vacant"
                         }else if machine5Status == 0{
                             print("MACHINE 5 IS FINISHED")
-//                            self.machine5Btn.accessibilityIdentifier = "finished"
+                            self.machine5Btn.accessibilityIdentifier = "finished"
                         }else if machine5Status != nil && machine5Status != 0{
                             print("MACHINE 5 IN USE")
-//                            self.machine5Btn.accessibilityIdentifier = "inuse"
+                            self.machine5Btn.accessibilityIdentifier = "inuse"
                         }
+                        
+                        
                         
                         
                         if machine6Status == nil{
                             print("MACHINE 6 IS VACANT")
-//                            self.machine4Btn.accessibilityIdentifier = "vacant"
+                            self.machine6Btn.accessibilityIdentifier = "vacant"
                         }else if machine6Status == 0{
                             print("MACHINE 6 IS FINISHED")
-//                            self.machine6Btn.accessibilityIdentifier = "finished"
+                            self.machine6Btn.accessibilityIdentifier = "finished"
                         }else if machine6Status != nil && machine6Status != 0{
                             print("MACHINE 6 IN USE")
-//                            self.machine6Btn.accessibilityIdentifier = "inuse"
+                            self.machine6Btn.accessibilityIdentifier = "inuse"
                         }
-
                         
+                        self.loadButtons()
 
-                        
                         
                     }
                     catch{
@@ -189,6 +197,19 @@ class MachinesViewcontroller: UIViewController{
     func loadButtons(){
         print()
         
+        for button in allMachineBtns{
+            if button.accessibilityIdentifier == "vacant"{
+                button.backgroundColor = UIColor(red: 135/255, green: 198/255, blue: 114/255, alpha: 1)
+                button.setTitle("VACANT",for: .normal)
+                }else if button.accessibilityIdentifier == "finished"{
+                    button.backgroundColor = UIColor(red: 108/255, green: 108/255, blue: 108/255, alpha: 1)
+                    button.setTitle("FINISHED",for: .normal)
+                }else if button.accessibilityIdentifier == "inuse"{
+                    button.backgroundColor = UIColor(red: 96/255, green: 165/255, blue: 229/255, alpha: 1)
+                    button.setTitle("IN USE",for: .normal)
+                }
+        }
+
         
     }
 }

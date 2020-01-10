@@ -359,6 +359,9 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="hba-bq-eEs"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dryer 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-ZC-5NH">
                                         <rect key="frame" x="14" y="8" width="217" height="28"/>
@@ -387,6 +390,9 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="hgU-JU-oYE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -412,6 +418,42 @@
                                 <rect key="frame" x="27" y="401" width="360" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90t-uL-yJe" customClass="DesignableButton" customModule="MakeLaundry" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="298" width="333" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="WASHERINUSE"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="17:23 Left">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="k8p-t5-fqG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp7-S3-PcN" customClass="DesignableButton" customModule="MakeLaundry" customModuleProvider="target">
+                                        <rect key="frame" x="13" y="204" width="333" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="WASHERINUSE"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="17:23 Left">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="3T6-7U-CIX"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-eK-CS4" customClass="DesignableButton" customModule="MakeLaundry" customModuleProvider="target">
                                         <rect key="frame" x="13" y="118" width="333" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -460,36 +502,6 @@
                                         <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AL-lb-ip1" customClass="DesignableView" customModule="MakeLaundry" customModuleProvider="target">
-                                        <rect key="frame" x="14" y="204" width="333" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp7-S3-PcN" customClass="DesignableButton" customModule="MakeLaundry" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="WASHERINUSE"/>
-                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                                <state key="normal" title="17:23 Left">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="3T6-7U-CIX"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.74901960779999999" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Washer 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyQ-eJ-Ppa">
                                         <rect key="frame" x="14" y="180" width="217" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -497,36 +509,6 @@
                                         <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjw-ig-kms" customClass="DesignableView" customModule="MakeLaundry" customModuleProvider="target">
-                                        <rect key="frame" x="14" y="298" width="333" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90t-uL-yJe" customClass="DesignableButton" customModule="MakeLaundry" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.37647058820000001" green="0.64705882349999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="WASHERINUSE"/>
-                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
-                                                <state key="normal" title="17:23 Left">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="machinePressed:" destination="D0X-vw-eJ9" eventType="touchUpInside" id="k8p-t5-fqG"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.74901960779999999" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Washer 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXl-TA-cQA">
                                         <rect key="frame" x="14" y="274" width="217" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -573,12 +555,20 @@
                         <outlet property="machine2Btn" destination="X61-l5-I4c" id="DrH-Ge-DcI"/>
                         <outlet property="machine3Btn" destination="9fx-wf-WvR" id="Lbg-nE-gAG"/>
                         <outlet property="machine4Btn" destination="y2q-eK-CS4" id="DfH-ik-r0M"/>
+                        <outlet property="machine5Btn" destination="Tp7-S3-PcN" id="lJJ-Jy-SNi"/>
+                        <outlet property="machine6Btn" destination="90t-uL-yJe" id="4mT-Me-vGb"/>
                         <outlet property="machineLabel1" destination="OZp-ZC-5NH" id="btS-U0-6S4"/>
                         <outlet property="machineLabel2" destination="8D4-dG-y7u" id="aE0-km-zCh"/>
                         <outlet property="machineLabel3" destination="hMX-8V-x77" id="pXK-fy-diJ"/>
                         <outlet property="machineLabel4" destination="EGm-UF-lW4" id="Rov-Iw-CfX"/>
                         <outlet property="machineLabel5" destination="SyQ-eJ-Ppa" id="PvM-7B-SQc"/>
                         <outlet property="machineLabel6" destination="qXl-TA-cQA" id="X6o-zS-a7x"/>
+                        <outletCollection property="allMachineBtns" destination="8lz-GI-DbR" collectionClass="NSMutableArray" id="eP8-rx-hO3"/>
+                        <outletCollection property="allMachineBtns" destination="X61-l5-I4c" collectionClass="NSMutableArray" id="7fm-ru-qXF"/>
+                        <outletCollection property="allMachineBtns" destination="9fx-wf-WvR" collectionClass="NSMutableArray" id="DPE-pT-H3i"/>
+                        <outletCollection property="allMachineBtns" destination="y2q-eK-CS4" collectionClass="NSMutableArray" id="n3R-uf-13a"/>
+                        <outletCollection property="allMachineBtns" destination="Tp7-S3-PcN" collectionClass="NSMutableArray" id="9Hl-ZC-s28"/>
+                        <outletCollection property="allMachineBtns" destination="90t-uL-yJe" collectionClass="NSMutableArray" id="9j4-Mp-tCa"/>
                         <segue destination="9Ig-UW-LZm" kind="show" identifier="vacantVC" id="dyY-F6-wRk"/>
                         <segue destination="5EK-lE-MzJ" kind="show" identifier="finishedVC" id="H0d-1a-tep"/>
                         <segue destination="WTc-lf-YJN" kind="show" identifier="notFinishedVC" id="ntT-gV-DsV"/>
